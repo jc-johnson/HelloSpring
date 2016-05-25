@@ -5,6 +5,7 @@ package com.tutorialspoint;
  */
 public class TextEditor {
     private SpellChecker spellChecker;
+    private String name;
 
     // A setter method to inject the dependency.
     public void setSpellChecker(SpellChecker spellChecker) {
@@ -15,6 +16,14 @@ public class TextEditor {
     // a getter method to return spellChecker
     public SpellChecker getSpellChecker() {
         return spellChecker;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void spellCheck() {

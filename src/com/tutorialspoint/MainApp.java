@@ -11,12 +11,9 @@ public class MainApp {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 
-        JavaCollection jc = (JavaCollection)context.getBean("javaCollection");
+        TextEditor te = (TextEditor) context.getBean("textEditor");
 
-        jc.getAddressList();
-        jc.getAddressSet();
-        jc.getAddressMap();
-        jc.getAddressProp();
+        te.spellCheck();
     }
 
 }
