@@ -1,6 +1,7 @@
 package com.tutorialspoint;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.annotation.Resource;
 
 /**
  * Created by jjohnson on 5/25/2016.
@@ -9,9 +10,8 @@ public class TextEditor {
 
     private SpellChecker spellChecker;
 
-    @Autowired
-    public TextEditor(SpellChecker spellChecker){
-        System.out.println("Inside TextEditor constructor.");
+    @Resource(name = "spellChecker")
+    public void setSpellChecker(SpellChecker spellChecker){
         this.spellChecker = spellChecker;
     }
 
