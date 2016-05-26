@@ -9,14 +9,12 @@
         <context:annotation-config/>
         <!-- bean definitions go here -->
 
-        <!-- Definition for student bean -->
-        <bean id="student" class="com.tutorialspoint.Student">
-            <property name="name" value="Zara"/>
-            <!-- try without passing age and check the result -->
-            <property name="age" value="11"/>
+        <!-- Definition for textEditor bean without constructor-arg -->
+        <bean id="textEditor" class="com.tutorialspoint.TextEditor">
         </bean>
 
         <!-- Definition for spellChecker bean -->
         <bean id="spellChecker" class="com.tutorialspoint.SpellChecker">
         </bean>
+
 </beans>
