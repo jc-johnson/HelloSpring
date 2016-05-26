@@ -11,10 +11,10 @@ public class MainApp {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 
-        TextEditor te = (TextEditor) context.getBean("textEditor");
+        Student student = (Student) context.getBean("student");
 
-        te.spellCheck();
+        System.out.println("Name : " + student.getName());
+        System.out.println("Age : " + student.getAge());
     }
-
 }
 
