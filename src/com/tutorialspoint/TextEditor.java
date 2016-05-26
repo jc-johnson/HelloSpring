@@ -1,6 +1,5 @@
 package com.tutorialspoint;
 
-
 import javax.annotation.Resource;
 
 /**
