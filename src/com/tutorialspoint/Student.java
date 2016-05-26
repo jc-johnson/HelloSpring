@@ -12,6 +12,7 @@ public class Student {
     }
 
     public Integer getAge(){
+        System.out.println("Age : " + age );
         return age;
     }
 
@@ -20,6 +21,12 @@ public class Student {
     }
 
     public String getName(){
+        System.out.println("Name : " + name);
         return name;
+    }
+
+    public void printThrowException(){
+        System.out.println("Exception raised");
+        throw new IllegalArgumentException();
     }
 }
