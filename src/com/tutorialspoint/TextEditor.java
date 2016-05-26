@@ -6,12 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
  * Created by jjohnson on 5/25/2016.
  */
 public class TextEditor {
-    private SpellChecker spellChecker;
-    private String name;
-
     @Autowired
-    public void setSpellChecker(SpellChecker spellChecker){
-        this.spellChecker = spellChecker;
+    private SpellChecker spellChecker;
+
+    public TextEditor(){
+        System.out.println("Inside TextEditor constructor.");
     }
 
     public SpellChecker getSpellChecker() {
