@@ -8,11 +8,7 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-        <bean id="helloWorld" class="com.tutorialspoint.HelloWorld">
-                <property name="message" value="Hello World"/>
-        </bean>
+        <bean id="customEventHandler" class="com.tutorialspoint.CustomEventHandler"/>
 
-        <bean id="cStartEventHandler" class="com.tutorialspoint.CStartEventHandler"/>
-
-        <bean id="cStopEventHandler" class="com.tutorialspoint.CStopEventHandler"/>
+        <bean id="customEventPublisher" class="com.tutorialspoint.CustomEventPublisher"/>
 </beans>
