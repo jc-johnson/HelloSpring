@@ -9,12 +9,20 @@
         <context:annotation-config/>
         <!-- bean definitions go here -->
 
-        <!-- Definition for textEditor bean without constructor-arg -->
-        <bean id="textEditor" class="com.tutorialspoint.TextEditor">
+        <!-- Definition for profile bean -->
+        <bean id="profile" class="com.tutorialspoint.Profile">
         </bean>
 
-        <!-- Definition for spellChecker bean -->
-        <bean id="spellChecker" class="com.tutorialspoint.SpellChecker">
+        <!-- Definition for student1 bean -->
+        <bean id="student1" class="com.tutorialspoint.Student">
+                <property name="name" value="Zara" />
+                <property name="age" value="11"/>
+        </bean>
+
+        <!-- Definition for student2 bean -->
+        <bean id="student2" class="com.tutorialspoint.Student">
+                <property name="name" value="Nuha"/>
+                <property name="age" value="2"/>
         </bean>
 
 </beans>
