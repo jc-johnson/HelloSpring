@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/Downloads/spring-framework-4.2.6.RELEASE/libs/spring-websocket-4.2.6.RELEASE.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/aspectj-1.8.9.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/aopalliance.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/Downloads/aspectj-1.8.9.jar!/doc/aspectj5rt-api" />
