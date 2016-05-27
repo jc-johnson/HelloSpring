@@ -9,14 +9,7 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
 
-        <aop:config>
-                <aop:aspect id="log" ref="logging">
-                        <aop:pointcut id="selectAll"
-                                      expression="execution(* com.tutorialspoint.Student.getName(..))"/>
-                        <aop:before pointcut-ref="selectAll" method="beforeAdvice"/>
-                        <aop:after pointcut-ref="selectAll" method="afterAdvice"/>
-                </aop:aspect>
-        </aop:config>
+        <aop:aspectj-autoproxy/>
 
         <!-- Definition for student bean -->
         <bean id="student" class="com.tutorialspoint.Student">
